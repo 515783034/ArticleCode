@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message MessagePush {
+    string topic = 1;
+    string content = 2;
+    string from = 3;
+}

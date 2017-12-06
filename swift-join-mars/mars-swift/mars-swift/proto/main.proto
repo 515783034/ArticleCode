@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+message Conversation {
+    string topic = 1;
+    string notice = 2;
+    string name = 3;
+}
+
+message ConversationListRequest {
+    enum FilterType {
+        DEFAULT = 0;
+        ALL = 1;
+        NEAR_BY = 2;
+        FRIENDS = 3;
+        HOT = 4;
+    }
+    string access_token = 1;
+    int32 type = 2;
+}
+
+message ConversationListResponse {
+    repeated Conversation list = 1;
+}
