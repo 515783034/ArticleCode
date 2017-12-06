@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95B72FA91FD6934200B7141F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B72FA81FD6934200B7141F /* AppDelegate.swift */; };
+		95B72FAB1FD6934200B7141F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B72FAA1FD6934200B7141F /* ViewController.swift */; };
+		95B72FAE1FD6934200B7141F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B72FAC1FD6934200B7141F /* Main.storyboard */; };
+		95B72FB01FD6934200B7141F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B72FAF1FD6934200B7141F /* Assets.xcassets */; };
+		95B72FB31FD6934200B7141F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B72FB11FD6934200B7141F /* LaunchScreen.storyboard */; };
+		95B72FC41FD696A400B7141F /* shortlink_packer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 95B72FBE1FD696A400B7141F /* shortlink_packer.cc */; };
+		95B72FC51FD696A400B7141F /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B72FC01FD696A400B7141F /* mars.framework */; };
+		95B72FC71FD696A400B7141F /* longlink_packer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 95B72FC31FD696A400B7141F /* longlink_packer.cc */; };
+		95B72FD41FD6986B00B7141F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B72FC91FD6981800B7141F /* CoreTelephony.framework */; };
+		95B72FD51FD6987200B7141F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B72FCA1FD6982000B7141F /* SystemConfiguration.framework */; };
+		95B72FD71FD6988400B7141F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B72FD61FD6987B00B7141F /* Foundation.framework */; };
+		95B72FD91FD6988E00B7141F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B72FD81FD6988E00B7141F /* libz.tbd */; };
+		95B72FDB1FD6989900B7141F /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B72FDA1FD6989900B7141F /* libresolv.9.tbd */; };
+		95B72FE31FD69BB800B7141F /* appender-swift-bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95B72FDD1FD69BB800B7141F /* appender-swift-bridge.mm */; };
+		95B72FE41FD69BB800B7141F /* LogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B72FDE1FD69BB800B7141F /* LogUtil.m */; };
+		95B72FE51FD69BB800B7141F /* LogHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95B72FE01FD69BB800B7141F /* LogHelper.mm */; };
+		95B72FE71FD6A15500B7141F /* MarsLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B72FE61FD6A15500B7141F /* MarsLog.swift */; };
+		95B72FEE1FD7857200B7141F /* main.proto in Resources */ = {isa = PBXBuildFile; fileRef = 95B72FED1FD7857200B7141F /* main.proto */; };
+		95B72FF01FD7857800B7141F /* main.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B72FEF1FD7857800B7141F /* main.pb.swift */; };
+		95B730141FD78FC900B7141F /* app_callback.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95B730051FD78FC800B7141F /* app_callback.mm */; };
+		95B730151FD78FC900B7141F /* NetworkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B730061FD78FC800B7141F /* NetworkEvent.m */; };
+		95B730161FD78FC900B7141F /* NetworkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B730081FD78FC800B7141F /* NetworkStatus.m */; };
+		95B730171FD78FC900B7141F /* stn_callback.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95B7300A1FD78FC800B7141F /* stn_callback.mm */; };
+		95B730181FD78FC900B7141F /* CGITask.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95B7300C1FD78FC800B7141F /* CGITask.mm */; };
+		95B730191FD78FC900B7141F /* NetworkService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95B730131FD78FC800B7141F /* NetworkService.mm */; };
+		9EADE2E369416B2AC464B35B /* Pods_mars_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2529F6E90C7DB952DBC691 /* Pods_mars_swift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95B72FA51FD6934200B7141F /* mars-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mars-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B72FA81FD6934200B7141F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95B72FAA1FD6934200B7141F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95B72FAD1FD6934200B7141F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95B72FAF1FD6934200B7141F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95B72FB21FD6934200B7141F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95B72FB41FD6934200B7141F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B72FBB1FD696A300B7141F /* mars-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mars-swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		95B72FBC1FD696A300B7141F /* longlink_packer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longlink_packer.h; sourceTree = "<group>"; };
+		95B72FBD1FD696A400B7141F /* stnproto_logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stnproto_logic.h; sourceTree = "<group>"; };
+		95B72FBE1FD696A400B7141F /* shortlink_packer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shortlink_packer.cc; sourceTree = "<group>"; };
+		95B72FBF1FD696A400B7141F /* shortlink_packer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shortlink_packer.h; sourceTree = "<group>"; };
+		95B72FC01FD696A400B7141F /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
+		95B72FC31FD696A400B7141F /* longlink_packer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = longlink_packer.cc; sourceTree = "<group>"; };
+		95B72FC91FD6981800B7141F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		95B72FCA1FD6982000B7141F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		95B72FD61FD6987B00B7141F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95B72FD81FD6988E00B7141F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		95B72FDA1FD6989900B7141F /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		95B72FDD1FD69BB800B7141F /* appender-swift-bridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "appender-swift-bridge.mm"; sourceTree = "<group>"; };
+		95B72FDE1FD69BB800B7141F /* LogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUtil.m; sourceTree = "<group>"; };
+		95B72FDF1FD69BB800B7141F /* appender-swift-bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "appender-swift-bridge.h"; sourceTree = "<group>"; };
+		95B72FE01FD69BB800B7141F /* LogHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LogHelper.mm; sourceTree = "<group>"; };
+		95B72FE11FD69BB800B7141F /* LogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUtil.h; sourceTree = "<group>"; };
+		95B72FE21FD69BB800B7141F /* LogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogHelper.h; sourceTree = "<group>"; };
+		95B72FE61FD6A15500B7141F /* MarsLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsLog.swift; sourceTree = "<group>"; };
+		95B72FED1FD7857200B7141F /* main.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.proto; sourceTree = "<group>"; };
+		95B72FEF1FD7857800B7141F /* main.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.pb.swift; sourceTree = "<group>"; };
+		95B730051FD78FC800B7141F /* app_callback.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = app_callback.mm; sourceTree = "<group>"; };
+		95B730061FD78FC800B7141F /* NetworkEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkEvent.m; sourceTree = "<group>"; };
+		95B730071FD78FC800B7141F /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		95B730081FD78FC800B7141F /* NetworkStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkStatus.m; sourceTree = "<group>"; };
+		95B730091FD78FC800B7141F /* NetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkDelegate.h; sourceTree = "<group>"; };
+		95B7300A1FD78FC800B7141F /* stn_callback.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = stn_callback.mm; sourceTree = "<group>"; };
+		95B7300B1FD78FC800B7141F /* UINotifyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINotifyDelegate.h; sourceTree = "<group>"; };
+		95B7300C1FD78FC800B7141F /* CGITask.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CGITask.mm; sourceTree = "<group>"; };
+		95B7300D1FD78FC800B7141F /* stn_callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stn_callback.h; sourceTree = "<group>"; };
+		95B7300E1FD78FC800B7141F /* CGITask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGITask.h; sourceTree = "<group>"; };
+		95B7300F1FD78FC800B7141F /* NetworkEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkEvent.h; sourceTree = "<group>"; };
+		95B730101FD78FC800B7141F /* app_callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app_callback.h; sourceTree = "<group>"; };
+		95B730111FD78FC800B7141F /* PushNotifyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotifyDelegate.h; sourceTree = "<group>"; };
+		95B730121FD78FC800B7141F /* NetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkStatus.h; sourceTree = "<group>"; };
+		95B730131FD78FC800B7141F /* NetworkService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NetworkService.mm; sourceTree = "<group>"; };
+		B9DCBED9E2ACE750FF3F2BC1 /* Pods-mars-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mars-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-mars-swift/Pods-mars-swift.release.xcconfig"; sourceTree = "<group>"; };
+		C593CC0D1756F04FDE05467C /* Pods-mars-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mars-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mars-swift/Pods-mars-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		FD2529F6E90C7DB952DBC691 /* Pods_mars_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mars_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95B72FA21FD6934200B7141F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B72FD71FD6988400B7141F /* Foundation.framework in Frameworks */,
+				95B72FD51FD6987200B7141F /* SystemConfiguration.framework in Frameworks */,
+				95B72FD41FD6986B00B7141F /* CoreTelephony.framework in Frameworks */,
+				95B72FC51FD696A400B7141F /* mars.framework in Frameworks */,
+				95B72FDB1FD6989900B7141F /* libresolv.9.tbd in Frameworks */,
+				95B72FD91FD6988E00B7141F /* libz.tbd in Frameworks */,
+				9EADE2E369416B2AC464B35B /* Pods_mars_swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		213CB813B91AFFE5897FB4A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C593CC0D1756F04FDE05467C /* Pods-mars-swift.debug.xcconfig */,
+				B9DCBED9E2ACE750FF3F2BC1 /* Pods-mars-swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95B72F9C1FD6934200B7141F = {
+			isa = PBXGroup;
+			children = (
+				95B72FA71FD6934200B7141F /* mars-swift */,
+				95B72FBA1FD6936000B7141F /* marsSDK */,
+				95B72FEC1FD7854500B7141F /* proto */,
+				95B72FBB1FD696A300B7141F /* mars-swift-Bridging-Header.h */,
+				95B72FA61FD6934200B7141F /* Products */,
+				95B72FC81FD6981800B7141F /* Frameworks */,
+				213CB813B91AFFE5897FB4A4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		95B72FA61FD6934200B7141F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95B72FA51FD6934200B7141F /* mars-swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95B72FA71FD6934200B7141F /* mars-swift */ = {
+			isa = PBXGroup;
+			children = (
+				95B72FA81FD6934200B7141F /* AppDelegate.swift */,
+				95B72FAA1FD6934200B7141F /* ViewController.swift */,
+				95B72FAC1FD6934200B7141F /* Main.storyboard */,
+				95B72FE61FD6A15500B7141F /* MarsLog.swift */,
+				95B72FAF1FD6934200B7141F /* Assets.xcassets */,
+				95B72FB11FD6934200B7141F /* LaunchScreen.storyboard */,
+				95B72FB41FD6934200B7141F /* Info.plist */,
+			);
+			path = "mars-swift";
+			sourceTree = "<group>";
+		};
+		95B72FBA1FD6936000B7141F /* marsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				95B730041FD78FC800B7141F /* bridge */,
+				95B72FDC1FD69BB800B7141F /* log */,
+				95B72FC31FD696A400B7141F /* longlink_packer.cc */,
+				95B72FBC1FD696A300B7141F /* longlink_packer.h */,
+				95B72FC01FD696A400B7141F /* mars.framework */,
+				95B72FBE1FD696A400B7141F /* shortlink_packer.cc */,
+				95B72FBF1FD696A400B7141F /* shortlink_packer.h */,
+				95B72FBD1FD696A400B7141F /* stnproto_logic.h */,
+			);
+			name = marsSDK;
+			path = "mars-swift/marsSDK";
+			sourceTree = "<group>";
+		};
+		95B72FC81FD6981800B7141F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95B72FDA1FD6989900B7141F /* libresolv.9.tbd */,
+				95B72FD81FD6988E00B7141F /* libz.tbd */,
+				95B72FD61FD6987B00B7141F /* Foundation.framework */,
+				95B72FCA1FD6982000B7141F /* SystemConfiguration.framework */,
+				95B72FC91FD6981800B7141F /* CoreTelephony.framework */,
+				FD2529F6E90C7DB952DBC691 /* Pods_mars_swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95B72FDC1FD69BB800B7141F /* log */ = {
+			isa = PBXGroup;
+			children = (
+				95B72FE11FD69BB800B7141F /* LogUtil.h */,
+				95B72FDE1FD69BB800B7141F /* LogUtil.m */,
+				95B72FDF1FD69BB800B7141F /* appender-swift-bridge.h */,
+				95B72FDD1FD69BB800B7141F /* appender-swift-bridge.mm */,
+				95B72FE21FD69BB800B7141F /* LogHelper.h */,
+				95B72FE01FD69BB800B7141F /* LogHelper.mm */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		95B72FEC1FD7854500B7141F /* proto */ = {
+			isa = PBXGroup;
+			children = (
+				95B72FEF1FD7857800B7141F /* main.pb.swift */,
+				95B72FED1FD7857200B7141F /* main.proto */,
+			);
+			name = proto;
+			path = "mars-swift/proto";
+			sourceTree = "<group>";
+		};
+		95B730041FD78FC800B7141F /* bridge */ = {
+			isa = PBXGroup;
+			children = (
+				95B730101FD78FC800B7141F /* app_callback.h */,
+				95B730051FD78FC800B7141F /* app_callback.mm */,
+				95B730071FD78FC800B7141F /* NetworkService.h */,
+				95B730131FD78FC800B7141F /* NetworkService.mm */,
+				95B730121FD78FC800B7141F /* NetworkStatus.h */,
+				95B730081FD78FC800B7141F /* NetworkStatus.m */,
+				95B7300E1FD78FC800B7141F /* CGITask.h */,
+				95B7300C1FD78FC800B7141F /* CGITask.mm */,
+				95B7300D1FD78FC800B7141F /* stn_callback.h */,
+				95B7300A1FD78FC800B7141F /* stn_callback.mm */,
+				95B7300F1FD78FC800B7141F /* NetworkEvent.h */,
+				95B730061FD78FC800B7141F /* NetworkEvent.m */,
+				95B730111FD78FC800B7141F /* PushNotifyDelegate.h */,
+				95B7300B1FD78FC800B7141F /* UINotifyDelegate.h */,
+				95B730091FD78FC800B7141F /* NetworkDelegate.h */,
+			);
+			path = bridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95B72FA41FD6934200B7141F /* mars-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B72FB71FD6934200B7141F /* Build configuration list for PBXNativeTarget "mars-swift" */;
+			buildPhases = (
+				BB24206C864E74B06E0DF0D7 /* [CP] Check Pods Manifest.lock */,
+				95B72FA11FD6934200B7141F /* Sources */,
+				95B72FA21FD6934200B7141F /* Frameworks */,
+				95B72FA31FD6934200B7141F /* Resources */,
+				C9371DF08EEEEE567814EE44 /* [CP] Embed Pods Frameworks */,
+				DABAE80B7454C9E7EFCD9CED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mars-swift";
+			productName = "mars-swift";
+			productReference = 95B72FA51FD6934200B7141F /* mars-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95B72F9D1FD6934200B7141F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = AshenDever;
+				TargetAttributes = {
+					95B72FA41FD6934200B7141F = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95B72FA01FD6934200B7141F /* Build configuration list for PBXProject "mars-swift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95B72F9C1FD6934200B7141F;
+			productRefGroup = 95B72FA61FD6934200B7141F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95B72FA41FD6934200B7141F /* mars-swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95B72FA31FD6934200B7141F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B72FB31FD6934200B7141F /* LaunchScreen.storyboard in Resources */,
+				95B72FEE1FD7857200B7141F /* main.proto in Resources */,
+				95B72FB01FD6934200B7141F /* Assets.xcassets in Resources */,
+				95B72FAE1FD6934200B7141F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB24206C864E74B06E0DF0D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mars-swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9371DF08EEEEE567814EE44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mars-swift/Pods-mars-swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mars-swift/Pods-mars-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DABAE80B7454C9E7EFCD9CED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mars-swift/Pods-mars-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95B72FA11FD6934200B7141F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B72FF01FD7857800B7141F /* main.pb.swift in Sources */,
+				95B730171FD78FC900B7141F /* stn_callback.mm in Sources */,
+				95B72FAB1FD6934200B7141F /* ViewController.swift in Sources */,
+				95B72FE51FD69BB800B7141F /* LogHelper.mm in Sources */,
+				95B72FE31FD69BB800B7141F /* appender-swift-bridge.mm in Sources */,
+				95B730141FD78FC900B7141F /* app_callback.mm in Sources */,
+				95B730151FD78FC900B7141F /* NetworkEvent.m in Sources */,
+				95B72FE41FD69BB800B7141F /* LogUtil.m in Sources */,
+				95B730191FD78FC900B7141F /* NetworkService.mm in Sources */,
+				95B72FC41FD696A400B7141F /* shortlink_packer.cc in Sources */,
+				95B730161FD78FC900B7141F /* NetworkStatus.m in Sources */,
+				95B730181FD78FC900B7141F /* CGITask.mm in Sources */,
+				95B72FE71FD6A15500B7141F /* MarsLog.swift in Sources */,
+				95B72FA91FD6934200B7141F /* AppDelegate.swift in Sources */,
+				95B72FC71FD696A400B7141F /* longlink_packer.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95B72FAC1FD6934200B7141F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95B72FAD1FD6934200B7141F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95B72FB11FD6934200B7141F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95B72FB21FD6934200B7141F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95B72FB51FD6934200B7141F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95B72FB61FD6934200B7141F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95B72FB81FD6934200B7141F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C593CC0D1756F04FDE05467C /* Pods-mars-swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 773A426V2P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mars-swift/marsSDK",
+				);
+				INFOPLIST_FILE = "mars-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hhmeidc.mars-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mars-swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95B72FB91FD6934200B7141F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9DCBED9E2ACE750FF3F2BC1 /* Pods-mars-swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 773A426V2P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mars-swift/marsSDK",
+				);
+				INFOPLIST_FILE = "mars-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hhmeidc.mars-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mars-swift-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95B72FA01FD6934200B7141F /* Build configuration list for PBXProject "mars-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B72FB51FD6934200B7141F /* Debug */,
+				95B72FB61FD6934200B7141F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95B72FB71FD6934200B7141F /* Build configuration list for PBXNativeTarget "mars-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B72FB81FD6934200B7141F /* Debug */,
+				95B72FB91FD6934200B7141F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95B72F9D1FD6934200B7141F /* Project object */;
+}
