@@ -1,0 +1,6 @@
+framework module SJDemoSDK {
+  umbrella header "SJDemoSDK.h"
+
+  export *
+  module * { export * }
+}
